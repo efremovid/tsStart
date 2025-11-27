@@ -1,9 +1,14 @@
-import styles from './UserCard.module.scss';
+import { UserInfo } from "../UserInfo";
+import { UserStat } from "../UserStat";
+import { UserTitle } from "../UserTitle";
+import styles from "./UserCard.module.scss";
 
-interface UserCardProps { }
+interface UserCardProps {}
 
-export const UserCard = ({ }: UserCardProps) => (
+export const UserCard = ({}: UserCardProps) => (
   <div className={styles.userCard}>
-    UserCard Component
+    <UserTitle />
+    <UserStat />
+    <UserInfo />
   </div>
 );

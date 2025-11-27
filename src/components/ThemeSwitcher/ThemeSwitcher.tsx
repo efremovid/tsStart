@@ -1,9 +1,23 @@
-import styles from './ThemeSwitcher.module.scss';
+import styles from "./ThemeSwitcher.module.scss";
+import iconSun from "../../assets/icon-sun.svg";
+import iconMoon from "../../assets/icon-moon.svg";
 
-interface ThemeSwitcherProps { }
+interface ThemeSwitcherProps {
+  theme: boolean;
+}
 
-export const ThemeSwitcher = ({ }: ThemeSwitcherProps) => (
-  <div className={styles.themeSwitcher}>
-    ThemeSwitcher Component
-  </div>
+export const ThemeSwitcher = ({ theme }: ThemeSwitcherProps) => (
+  <button className={styles.btn}>
+    {theme ? (
+      <div className={styles.btnContainer}>
+        <p>LIGHT</p>
+        <img src={iconSun} alt="" />
+      </div>
+    ) : (
+      <div className={styles.btnContainer}>
+        <p>DARK</p>
+        <img src={iconMoon} alt="" />
+      </div>
+    )}
+  </button>
 );

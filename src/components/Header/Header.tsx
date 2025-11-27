@@ -1,9 +1,11 @@
-import styles from './Header.module.scss';
+import { ThemeSwitcher } from "../ThemeSwitcher";
+import styles from "./Header.module.scss";
 
-interface HeaderProps { }
+interface HeaderProps {}
 
-export const Header = ({ }: HeaderProps) => (
+export const Header = ({}: HeaderProps) => (
   <div className={styles.header}>
-    Header Component
+    <h1>GithubFinder</h1>
+    <ThemeSwitcher theme />
   </div>
 );

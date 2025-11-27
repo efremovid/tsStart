@@ -1,1 +1,10 @@
-.userTitle {}
+.userTitle {
+    display: flex;
+    gap: 15px;
+}
+
+.userTitleInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

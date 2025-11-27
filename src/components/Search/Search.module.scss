@@ -1,1 +1,17 @@
-.search {}
+.search {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 20px auto 100px;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  background: var(--main-color);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}

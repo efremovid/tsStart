@@ -1,9 +1,20 @@
-import styles from './UserStat.module.scss';
+import styles from "./UserStat.module.scss";
 
-interface UserStatProps { }
+interface UserStatProps {}
 
-export const UserStat = ({ }: UserStatProps) => (
+export const UserStat = ({}: UserStatProps) => (
   <div className={styles.userStat}>
-    UserStat Component
+    <div className={styles.userStatItem}>
+      <p>repos</p>
+      <p>25</p>
+    </div>
+    <div className={styles.userStatItem}>
+      <p>followers</p>
+      <p>25</p>
+    </div>
+    <div className={styles.userStatItem}>
+      <p>following</p>
+      <p>25</p>
+    </div>
   </div>
 );
